@@ -14,7 +14,8 @@ function App() {
             <Typography variant='h2' component='h1'>
             JavaScript Quiz 
             </Typography>
-          </Stack>  
+          </Stack> 
+          // start is the btn for starting 
           <Start />
       </Container>   
     </main>   
