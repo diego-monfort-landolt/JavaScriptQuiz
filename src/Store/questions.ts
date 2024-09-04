@@ -10,6 +10,7 @@ interface State {
   goPreviousQuestion: () => void
   reset: () => void
 }
+
 export const useQuestionsStore = create<State>((set, get) => {
   return {
     loading: false,
