@@ -9,7 +9,6 @@ function App() {
     <>
     <main>
       <Container maxWidth='sm'>
-        
           <Stack direction='row' gap={2} alignItems='center' justifyContent='center'>     
             <JavaScriptLogo />
             <Typography variant='h2' component='h1'>
