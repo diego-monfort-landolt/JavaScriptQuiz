@@ -16,8 +16,7 @@ function App() {
             </Typography>
           </Stack>  
           <Start />
-      </Container>
-      
+      </Container>   
     </main>   
     </>
   )
