@@ -15,8 +15,8 @@ function App() {
             JavaScript Quiz 
             </Typography>
           </Stack> 
-          // start is the btn for starting 
-          <Start />
+           
+          <Start /> 
       </Container>   
     </main>   
     </>
