@@ -11,7 +11,7 @@ export const Start = () => {
   }
   return(
     <>
-    <Button onClick={handleClick} variant="contained"  >¡Let's Start!</Button>
+    <Button onClick={handleClick} variant="contained"  sx={{ border: 'none', bgcolor: 'blueviolet' }}>¡Let's Start!</Button>
     </>  
   ) 
 }
