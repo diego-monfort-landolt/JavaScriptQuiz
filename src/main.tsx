@@ -18,7 +18,7 @@ const darkTheme = createTheme({
 createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-      <App />   
+        <App />   
     </ThemeProvider>
    
 )
