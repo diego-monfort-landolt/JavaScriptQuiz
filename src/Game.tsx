@@ -13,7 +13,8 @@ const Question = ( { info }: {info: QuestionType}) => {
       textAlign: 'left',
       padding: '5px',
       borderRadius:'10px',
-      boxShadow: '0px 0px 20px rgba(255, 0, 0, 0.5)'}}
+      boxShadow: '0px 0px 20px rgba(255, 0, 0, 0.5)',
+      marginTop: '15px'}}
       >
 
       <Typography variant="h5">
@@ -22,11 +23,11 @@ const Question = ( { info }: {info: QuestionType}) => {
       <SyntaxHighLighter language="javascript" style={gradientDark}>
         {info.code}
       </SyntaxHighLighter>
-      <List sx={{bgcolor: '#333'}}>
+      <List sx={{bgcolor: '#333'}} disablePadding>
         {info.answers.map((answer, index) => (
           <ListItem key={index} divider disablePadding >
             <ListItemButton>
-              <ListItemText primary={answer} />
+              <ListItemText primary={answer}  sx={{ textAlign: 'center' }} />
             </ListItemButton>
           </ListItem>
         ))}
