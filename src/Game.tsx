@@ -46,5 +46,4 @@ export const Game = () => {
     <Question info={questionInfo}/>
     </>
   )
-
 }
