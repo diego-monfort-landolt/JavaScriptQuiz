@@ -22,9 +22,9 @@ const Question = ( { info }: {info: QuestionType}) => {
       <SyntaxHighLighter language="javascript" style={gradientDark}>
         {info.code}
       </SyntaxHighLighter>
-      <List sx={{bgColor: '#333'}}>
+      <List sx={{bgcolor: '#333'}}>
         {info.answers.map((answer, index) => (
-          <ListItem key={index} disablePadding >
+          <ListItem key={index} divider disablePadding >
             <ListItemButton>
               <ListItemText primary={answer} />
             </ListItemButton>
@@ -41,6 +41,7 @@ export const Game = () => {
   const currentQuestion = useQuestionsStore(state => state.currentQuestion)
 
   const questionInfo = questions[currentQuestion]
+
   return ( 
     <>
     <Question info={questionInfo}/>
