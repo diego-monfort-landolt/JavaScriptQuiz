@@ -10,6 +10,7 @@ export const Start = () => {
     fetchQuestions(LIMIT_QUESTIONS)
   }
   return(
+    
     <>
     <Button onClick={handleClick} variant="contained"  sx={{ border: 'none', bgcolor: 'blueviolet' }}>¡Let's Start!</Button>
     </>  
