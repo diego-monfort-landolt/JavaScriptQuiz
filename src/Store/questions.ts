@@ -1,5 +1,6 @@
 import { create } from "zustand"
 import { type Question  } from "../types"
+import confetti from 'canvas-confetti'
 
 interface State {
   questions: Question[]
@@ -34,6 +35,7 @@ export const useQuestionsStore = create<State>((set, get) => {
       const questionInfo = newQuestions[questionIndex]
       // averiguamos si el usuario ha selecionado la respuesta correcta
       const isCorrectUserAnswer = questionInfo.correctAnswer === answerIndex
+      if (isCorrectUserAnswer) confetti()
       // cambiar esta info en la copia de la pregunta
       newQuestions[questionIndex] = {
         ...questionInfo,
