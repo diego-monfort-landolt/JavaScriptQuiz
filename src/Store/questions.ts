@@ -41,7 +41,7 @@ export const useQuestionsStore = create<State>((set, get) => {
         userSelectedAnswer: answerIndex
       }
       // actualizamos estado
-      
+      set({ questions: newQuestions })
 
     }
   }
