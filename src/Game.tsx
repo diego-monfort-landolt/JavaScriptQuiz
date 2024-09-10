@@ -24,7 +24,6 @@ const Question = ( { info }: {info: QuestionType}) => {
     //si esta es la selecion del usuario pero no es la correcta
     if (index === userSelectedAnswer) return 'red'
     //si es ninguna de las amnteriores
-
     return 'transparent'
   }
 
@@ -47,7 +46,9 @@ const Question = ( { info }: {info: QuestionType}) => {
       <List sx={{bgcolor: '#333'}} disablePadding>
         {info.answers.map((answer, index) => (
           <ListItem key={index} divider disablePadding >
-            <ListItemButton onClick={createHandleClick(index)}
+            <ListItemButton
+            disabled={info.userSelectedAnswer != null}
+            onClick={createHandleClick(index)}
             sx={{ backgroundColor: getBackgroundColor(info, index)}}
             >
               <ListItemText primary={answer}  sx={{ textAlign: 'center' }} />
