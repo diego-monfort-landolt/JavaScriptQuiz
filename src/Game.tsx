@@ -1,9 +1,10 @@
-import { Card, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from "@mui/material"
+import { Card, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from "@mui/material"
 import { useQuestionsStore } from "./Store/questions"
 import SyntaxHighLighter from "react-syntax-highlighter"
 import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { type Question as QuestionType } from "./types"
-import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material"
+import { IconButton, ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material"
+
 
 
 const Question = ( { info }: {info: QuestionType}) => {
@@ -74,7 +75,7 @@ export const Game = () => {
     <Stack direction='row' gap={2} alignItems='center' justifyContent='center'>
       <IconButton 
       onClick={goPreviousQuestion} 
-      disbled={currentQuestion === 0}
+      disbled={currentQuestion === 0 }
       >
         <ArrowBackIosNew />
       </IconButton>
@@ -88,7 +89,7 @@ export const Game = () => {
         <ArrowForwardIos />
       </IconButton>
     </Stack>
-    
+
     <Question info={questionInfo}/>
     </>
   )
