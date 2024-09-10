@@ -5,8 +5,6 @@ import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { type Question as QuestionType } from "./types"
 import { IconButton, ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material"
 
-
-
 const Question = ( { info }: {info: QuestionType}) => {
   const selectAnswer = useQuestionsStore(state => state.selectAnswer)
 
