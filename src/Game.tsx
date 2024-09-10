@@ -3,7 +3,8 @@ import { useQuestionsStore } from "./Store/questions"
 import SyntaxHighLighter from "react-syntax-highlighter"
 import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { type Question as QuestionType } from "./types"
-import { IconButton, ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material"
+import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material"
+import IconButton from '@mui/material/IconButton';
 
 const Question = ( { info }: {info: QuestionType}) => {
   const selectAnswer = useQuestionsStore(state => state.selectAnswer)
@@ -70,10 +71,16 @@ export const Game = () => {
 
   return ( 
     <>
-    <Stack direction='row' gap={2} alignItems='center' justifyContent='center'>
+    <Stack 
+    direction='row' 
+    gap={2} 
+    alignItems='center' 
+    justifyContent='left'
+    sx={{border: '1px solid red'}}
+    >
       <IconButton 
       onClick={goPreviousQuestion} 
-      disbled={currentQuestion === 0 }
+      disabled={currentQuestion === 0 }
       >
         <ArrowBackIosNew />
       </IconButton>
@@ -81,7 +88,7 @@ export const Game = () => {
 
       <IconButton 
        onClick={goNextQuestion}
-       disbled={currentQuestion >= questions.length - 1}
+       disabled={currentQuestion >= questions.length - 1}
        >
 
         <ArrowForwardIos />
