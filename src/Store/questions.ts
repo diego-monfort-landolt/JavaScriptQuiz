@@ -1,6 +1,7 @@
 import { create } from "zustand"
 import { type Question  } from "../types"
 import confetti from 'canvas-confetti'
+//import { persist, devtools } from 'zustand/middleware'
 
 interface State {
   questions: Question[]
@@ -12,7 +13,7 @@ interface State {
   reset: () => void
 }
 
-
+//()(devtools(persist
 export const useQuestionsStore = create<State>((set, get) => {
   return {
     loading: false,

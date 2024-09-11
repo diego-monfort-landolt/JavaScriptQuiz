@@ -5,6 +5,7 @@ import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { type Question as QuestionType } from "./types"
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material"
 import IconButton from '@mui/material/IconButton';
+import { Footer } from "./Footer"
 
 const Question = ( { info }: {info: QuestionType}) => {
   const selectAnswer = useQuestionsStore(state => state.selectAnswer)
@@ -97,6 +98,7 @@ export const Game = () => {
     </Stack>
 
     <Question info={questionInfo}/>
+    <Footer />
     </>
   )
 }
