@@ -16,7 +16,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <strong >{`✅ ${correct} | ❌ ${incorrect} | 😒${unanswered}`}</strong>
+      <strong >{`✅ ${correct} Correct | ❌ ${incorrect} Incorrect | 😒${unanswered} Without Answer`}</strong>
 
     </footer>
   )

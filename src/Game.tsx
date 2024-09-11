@@ -97,8 +97,8 @@ export const Game = () => {
       </IconButton>
     </Stack>
 
-    <Question info={questionInfo}/>
-    <Footer />
+    <Question info={questionInfo} />
+    <Footer  />
     </>
   )
 }
