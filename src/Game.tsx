@@ -76,11 +76,11 @@ export const Game = () => {
     gap={2} 
     alignItems='center' 
     justifyContent='left'
-    sx={{border: '1px solid red'}}
     >
       <IconButton 
       onClick={goPreviousQuestion} 
       disabled={currentQuestion === 0 }
+      sx={{border: '1px solid red'}}
       >
         <ArrowBackIosNew />
       </IconButton>
@@ -89,6 +89,7 @@ export const Game = () => {
       <IconButton 
        onClick={goNextQuestion}
        disabled={currentQuestion >= questions.length - 1}
+       sx={{border: '1px solid red'}}
        >
 
         <ArrowForwardIos />
