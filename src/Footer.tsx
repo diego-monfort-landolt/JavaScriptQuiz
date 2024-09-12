@@ -11,7 +11,7 @@ export const Footer = () => {
       <strong>{`✅ ${correct} correctas - ❌ ${incorrect} incorrectas - ❓ ${unanswered} sin responder`}</strong>
       <div style={{ marginTop: '16px' }}>
         <Button style={{ boxShadow: '0 0px 5px 1px red', marginTop: '10px', border: '1px solid red', borderRadius: '15px'}} onClick={() => reset()}>
-          Reset
+          New Game
         </Button>
       </div>
     </footer>
