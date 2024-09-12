@@ -24,7 +24,9 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      'react-refresh/only-export-components': 'warn',
       '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-unused-vars': 'off'
     },
   },
