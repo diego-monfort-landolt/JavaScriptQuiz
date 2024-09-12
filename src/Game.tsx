@@ -30,12 +30,12 @@ const Question = ( { info }: {info: QuestionType}) => {
 
   return (
     <>
-    <Card variant='outlined' sx={{ 
-      textAlign: 'left',
-      padding: '5px',
-      borderRadius:'10px',
-      boxShadow: '0px 0px 20px rgba(255, 0, 0, 0.5)',
-      marginTop: '15px'}}
+      <Card variant='outlined' sx={{ 
+        textAlign: 'left',
+        padding: '5px',
+        borderRadius:'10px',
+        boxShadow: '0px 0px 20px rgba(255, 0, 0, 0.5)',
+        marginTop: '15px'}}
       >
 
       <Typography variant="h5">
