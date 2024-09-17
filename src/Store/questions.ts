@@ -46,9 +46,7 @@ export const useQuestionsStore = create<State>()(devtools(persist((set, get) => 
       }
       // actualizamos estado
       set({ questions: newQuestions })
-
     },
-
     goNextQuestion: () => {
      const { currentQuestion, questions } = get()
      const nexstQuestion = currentQuestion + 1 
