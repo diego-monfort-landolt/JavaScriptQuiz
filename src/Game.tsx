@@ -76,7 +76,7 @@ export const Game = () => {
     direction='row' 
     gap={2} 
     alignItems='center' 
-    justifyContent='left'
+    justifyContent='center'
     >
       <IconButton 
       onClick={goPreviousQuestion} 
