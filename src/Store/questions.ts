@@ -12,7 +12,6 @@ interface State {
   goPreviousQuestion: () => void
   reset: () => void
 }
-//()(devtools(persist
 export const useQuestionsStore = create<State>()(devtools(persist((set, get) => {
   return {
     loading: false,
