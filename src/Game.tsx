@@ -90,7 +90,7 @@ export const Game = () => {
       <IconButton 
        onClick={goNextQuestion}
        disabled={currentQuestion >= questions.length - 1}
-       sx={{border: '1px solid red'}}
+       sx={{border: '1px solid red', boxShadow: '0 0 10px orange'}}
        >
 
         <ArrowForwardIos />
