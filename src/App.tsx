@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-    
     <main>
       <Container maxWidth='sm'>
           <Stack direction='row' gap={2} alignItems='center' justifyContent='center'>     
