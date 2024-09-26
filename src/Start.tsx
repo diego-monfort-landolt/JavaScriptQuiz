@@ -5,7 +5,6 @@ const LIMIT_QUESTIONS  = 15
 
 export const Start = () => {
   const fetchQuestions = useQuestionsStore(state => state.fetchQuestions)
-
   const handleClick = () => {
     fetchQuestions(LIMIT_QUESTIONS)
   }

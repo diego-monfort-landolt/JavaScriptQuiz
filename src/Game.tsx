@@ -95,7 +95,6 @@ export const Game = () => {
         <ArrowForwardIos />
       </IconButton>
     </Stack>
-
     <Question info={questionInfo} />
     <Footer  />
     </>
