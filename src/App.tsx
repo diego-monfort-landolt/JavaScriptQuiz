@@ -7,7 +7,6 @@ import { Game } from './Game'
 
 function App() {
   const questions = useQuestionsStore(state => state.questions )
-
   return (
     <>
     <main>
