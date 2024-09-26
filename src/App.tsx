@@ -16,8 +16,7 @@ function App() {
             <Typography variant='h2' component='h1' sx={{ marginBottom: '10px'}}>
             JavaScript Quiz 
             </Typography>
-          </Stack> 
-           
+          </Stack>     
           {questions.length === 0 && <Start /> }
           {questions.length > 0 && <Game />}
       </Container>   
