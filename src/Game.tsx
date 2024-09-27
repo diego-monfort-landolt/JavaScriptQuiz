@@ -61,7 +61,6 @@ const Question = ( { info }: {info: QuestionType}) => {
     </>
   )
 }
-
 export const Game = () => {
   const questions = useQuestionsStore(state => state.questions)
   const currentQuestion = useQuestionsStore(state => state.currentQuestion)
