@@ -2,7 +2,6 @@ import { useQuestionsStore } from '../Store/questions'
 
 export const useQuestionsData = () => {
   const questions = useQuestionsStore(state => state.questions)
-
   let correct = 0
   let incorrect = 0
   let unanswered = 0
