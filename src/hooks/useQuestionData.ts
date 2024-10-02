@@ -12,6 +12,5 @@ export const useQuestionsData = () => {
     else if (userSelectedAnswer === correctAnswer) correct++
     else incorrect++
   })
-
   return { correct, incorrect, unanswered }
 }
