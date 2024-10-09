@@ -10,7 +10,7 @@ export const Start = () => {
   }
   return(
     <>
-    <Button onClick={handleClick} variant="contained"  sx={{ border: 'none', bgcolor: 'blueviolet' }}>¡Let's Start!</Button>
+    <Button onClick={handleClick} variant="contained"  sx={{ border: 'none',borderRadius: '10px 0 10px 0', boxShadow: '0 0 5px 1px red', bgcolor: 'blueviolet' }}>¡Let's Start!</Button>
     </>  
   ) 
 }
