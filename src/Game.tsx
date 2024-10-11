@@ -27,6 +27,7 @@ const Question = ( { info }: {info: QuestionType}) => {
     //si es ninguna de las amnteriores
     return 'transparent'
   }
+  
   return (
     <>
       <Card variant='outlined' sx={{ 
