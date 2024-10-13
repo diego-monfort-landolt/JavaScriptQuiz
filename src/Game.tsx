@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import { Footer } from "./Footer"
 
 const Question = ( { info }: {info: QuestionType}) => {
+  
   const selectAnswer = useQuestionsStore(state => state.selectAnswer)
 
   const createHandleClick = (answerIndex: number) => () =>{
