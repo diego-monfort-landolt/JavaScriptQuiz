@@ -14,7 +14,6 @@ const Question = ( { info }: {info: QuestionType}) => {
   const createHandleClick = (answerIndex: number) => () =>{
     selectAnswer(info.id, answerIndex)
   }
-
   const getBackgroundColor = (info: QuestionType, index: number) => {
     const { userSelectedAnswer, correctAnswer } = info
     //si user no ha marcado nada todavia
